@@ -1,0 +1,133 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.wrapper {
+    width: 900px;
+    height: 950px;
+    margin: 0 auto;
+    background: radial-gradient(rgb(44, 1, 44), rgb(114, 72, 114), rgb(94, 70, 94), rgb(44, 1, 44)); /* Standard syntax (must be last) */
+}
+
+.header {
+    height: 50px;
+    padding: 10px;
+    background-color: rgb(250, 245, 245);
+}
+
+h1 {
+    width: 450px;
+    color: black;
+    display: inline-block;
+}
+
+.header h2 {
+    display: inline-block;
+    width: 400px;
+    text-align: right;
+}
+
+.intro {
+    height: 260px;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+.intro img {
+    border: solid silver 5px;
+    margin: 5px;
+}
+
+.about {
+    display: inline-block;
+    width: 450px;
+    padding: 7px;
+    vertical-align: top;
+}
+
+.about h2,
+.main h2,
+.box2 h2 {
+    background-image: linear-gradient(lightgrey, grey, lightgrey);
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.about p {
+    background: linear-gradient(90deg, rgb(243, 233, 243), rgb(204, 188, 204));
+    padding: 5.8px;
+}
+
+.about a {
+    color: black;
+    font-size: 20px
+}
+
+.main {
+    height: 340px;
+}
+
+.box,
+.box2 {
+    width: 275px;
+    margin-top: 30px;
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+}
+
+.box p {
+    padding: 15px;
+}
+
+.box {
+    background: linear-gradient(90deg, rgb(243, 233, 243), rgb(204, 188, 204));
+}
+
+.box2 {
+    height: 200px;
+    background: linear-gradient(90deg, rgb(243, 233, 243), rgb(204, 188, 204));
+}
+
+.box2 img {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+}
+
+button {
+    padding: 7px;
+    border-radius: 10px;
+    color: white;
+    background-color: green;
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    left: 90px;
+}
+
+.footer {
+    height: 100px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.footer img {
+    width: 40px;
+    height: 40px;
+}
+
+span {
+    position: relative;
+    left: 235px;
+}
+
+h3 {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
