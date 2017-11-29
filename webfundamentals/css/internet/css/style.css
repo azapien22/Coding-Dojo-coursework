@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    width: 970px;
+    height: 900px;
+    margin: 0 auto;
+    background: linear-gradient(rgb(209, 213, 216), white, white);
+}
+
+/* header */
+
+.heading,
+.sub_heading {
+    height: 75px;
+    width: auto;
+    display: flex;
+}
+
+.heading {
+    background-color: white;
+}
+
+.heading h1 {
+    display: flex;
+    padding: 13px;
+    font-size: 50px;
+}
+
+.heading span {
+    color: blue;
+}
+
+.sub_heading {
+    background: linear-gradient(rgb(84, 84, 247),rgb(108, 108, 224), rgb(84, 84, 247));
+    display: flex;
+    align-items: center;
+}
+
+.sub_heading h2 {
+    font-size: 40px;
+    color: white;
+    padding-left: 10px;
+}
+
+/* main */
+
+.net {
+    height: 675px;
+    width: 250px;
+}
+
+#fnt_size {
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+
+#sub_fnt {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+#internet {
+    color: red;
+    font-weight: bold;
+}
+
+.net p {
+    font-weight: bold;
+}
+
+.net .blue {
+    color: blue;
+}
+
+#vid {
+    background-color: rgb(113, 113, 247);
+    color: white;
+    padding: 5px;
+    border-radius: 7px;
+    width: 215px;
+    font-size: 20px;
+}
+
+#resource {
+    background-color: orange;
+    color: white;
+    padding: 5px;
+    border-radius: 7px;
+    width: 215px;
+    font-size: 20px;
+}
+
+.box {
+    height: 100px;
+    width: 225px;
+    border-bottom: solid grey;
+    border-width: 2px;
+    margin: 15px auto
+}
+
+.ninja {
+    margin-top: 15px;
+    background-image: url(pics/ad_background.png);
+    height: 375px;
+    width: 225px;
+    margin: 25px auto;
+}
+
+.ninja h1 {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.ninja img {
+    padding-left: 55px;
+}
+
+#b_press {
+    color: white;
+    background-color: lightblue;
+    font-size: 20px;
+    padding: 7px;
+    width: 195px;
+    margin: 15px;
+    border-radius: 7px; 
+}
+
+.contact {
+    height: 50px;
+    width: 690px;
+    margin: -660px 275px 0px 275px;
+    border-bottom: solid grey;
+    border-width: 1px;
+}
+
+.contact h3 {
+    color: rgb(84, 84, 247);
+}
+
+.dns,
+.home {
+    vertical-align: top;
+}
+
+.contact .dns {
+    color: rgb(52, 52, 238);    
+    font-size: 25px;
+}
+
+.dns {
+    display: inline;
+}
+
+.info {
+    height: 50px;
+    width: 140px;
+    display: block;
+    position: relative;
+    left: 545px;
+    bottom: 45px;
+    margin-top: -10px; 
+}
+
+#phone {
+    color: lightskyblue;
+}
+
+.phone_banner {
+    padding-left: 415px;
+}
+
+.cs {
+    margin-top: -25px
+}
+
+.process p,
+.cs p {
+    padding: 4px;
+}
+
+.big3 span,
+.process span,
+.cs span {
+    color: rgb(38, 201, 241);
+}
+
+.process ol li,
+.cs ul li {
+    margin-left: 40px;
+}
+
+.cs img {
+    margin: 15px 50px 10px 175px;
+}
+
+.process {
+    margin-top: 10px;
+}
+
+/* footer */
+
+.big3 {
+    height: 135px;
+    width: 680px;
+    border-top: solid blue;
+    border-left: solid blue;
+    border-right: solid blue;
+    border-width: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.three {
+    padding: 10px;
+}
+
+.big3 h3 {
+    display: inline-block; 
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.big3 p {
+    margin-left: 135px;
+    margin-top: -100px;
+}
