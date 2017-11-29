@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    height: 850px;
+    width: 1300px;
+    border: solid rgb(247, 243, 243);
+    background-color: rgb(247, 243, 243);
+    margin: 0 auto;
+}
+
+.header {
+    color: red;
+}
+
+.header #space {
+    margin-left: 30px;
+}
+
+.header h3 {
+    padding-left: 10px;
+}
+
+.header ul {
+    height: 20px;
+    width: 1200px;
+    margin-left: 65px;
+    margin-top: -40px;
+}
+
+.header li {
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.ncolumn {
+    height: 470px;
+    width: 50px;
+    color: red;
+    text-align: center;
+    margin-top: 25px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ncolumn li {
+    padding-left:10px; 
+    padding-top: 25px; 
+    padding-bottom: 25px;
+    list-style-type: none;
+}
+
+.blue {
+    display: inline-block;
+    margin-top: 30px;
+    width: 140px;
+}
+
+.blue h3,
+.pink h3,
+.yellow h3,
+.green h3,
+.green2 h3 {
+    color: purple;
+}
+
+.blue li {
+    display: inline-block;
+    background-color: lightblue;
+    text-align: center;
+    list-style-type: none;
+    width: 50px;
+    margin: 3.5px 5px 0px -2px;
+    padding: 3.7px;
+}
+
+.pink {
+    display: inline-block;
+}
+
+.pink li {
+    background-color: pink;
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    width: 50px;
+    margin: 3.5px 5px 0px -2px;
+    padding: 3.7px;
+}
+
+.yellow {
+    display: inline-block;
+}
+
+#right {
+    margin-left: 345px; 
+}
+
+.yellow li {
+    background-color: yellow;
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    margin: 3.5px 10px 0px -2px;
+    padding: 3.7px;
+}
+
+.green {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.green li {
+    background-color: lightgreen;
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    margin: 3.5px 5px 0px -2px;
+    padding: 3.7px;
+}
+
+.element {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 45px;
+    margin-left: 65px;
+}
+
+.element li {
+    list-style-type: none;
+    color: red;
+}
+
+#star {
+    margin-left: 31px;
+}
+
+.star {
+    margin-left: 31px;
+}
+
+.act {
+    margin-top: 45px;
+}
+
+.green2 {
+    display: inline-block;
+    list-style-type: none; 
+}
+
+.green2 li {
+    background-color: lightgreen;
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    margin: 3.5px 10px 0px -2px;
+    padding: 3.7px;
+}
