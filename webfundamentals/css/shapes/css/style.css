@@ -1,0 +1,97 @@
+.wrapper {
+    margin: 0 auto;
+}
+
+#square {
+    width: 140px;
+    height: 140px;
+    background-color: blue;
+}
+
+#circle {
+    height: 140px;
+    width: 140px;
+    border-radius: 100px;
+    background-color: blue;
+}
+
+#up_triangle {
+    width: 0;
+	height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 150px solid blue;
+}
+
+#right_ninety {
+    width: 0;
+	height: 0;
+	border-bottom: 150px solid blue;
+	border-left: 150px solid transparent;
+}
+
+#left_nintey {
+    width: 0;
+	height: 0;
+	border-bottom: 150px solid black;
+	border-right: 150px solid transparent;
+}
+
+.triangle_tleft {
+    width: 0;
+	height: 0;
+	border-top: 150px solid black;
+	border-right: 150px solid transparent;
+}
+
+.triangle_tright {
+    width: 0;
+	height: 0;
+	border-top: 150px solid blue;
+	border-left: 150px solid transparent;
+}
+
+.down_triangle {
+    width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-top: 150px solid yellow;
+}
+
+.right_triangle {
+    width: 0;
+	height: 0;
+	border-top: 75px solid transparent;
+	border-left: 150px solid green;
+	border-bottom: 75px solid transparent;
+}
+
+.left_triangle {
+    width: 0;
+	height: 0;
+	border-top: 75px solid transparent;
+	border-right: 150px solid orange;
+	border-bottom: 75px solid transparent;
+}
+
+#pacman {
+    width: 0px;
+    height: 0px;
+    border-right: 80px solid transparent;
+    border-top: 80px solid red;
+    border-left: 80px solid yellow;
+    border-bottom: 80px solid green;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+  }
+
+  .moon {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 red;
+  }
+
