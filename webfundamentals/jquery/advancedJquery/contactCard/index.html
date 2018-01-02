@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script>
+        $(document).ready(function(){
+			$("button").click(function(){
+				//Extract values from input fields
+				var first = $("#first").val();
+				var last = $("#last").val();
+				var desc = $("textarea").val();
+				//Append dynamically created div to DOM
+				$("#cards").append("<div id = 'card'><h1>" + first + " " + last+"</h1><p id = 'back'> " + desc +"</p></div>");
+                $('#cards').css('background-color', 'white').css('height','200px').css('width','200px')
+                .css('margin-left','300px').css('margin-top', '-300px').css('border','solid', 'black');
+				//Clear form fields by setting their value to empty
+				$("#first").val("");
+				$("#last").val("");
+				$("#textarea").val("");
+				//Return false to prevent refresh
+				return false;
+			});
+
+            $(document).on('click', '#card', function(){
+				//Toggle the #cards' childrens' display property
+				$(this).children().toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="info">
+            <form>
+                <label>First Name</label>
+                <input type="text" name="first_name" placeholder="first_name" id="first">
+                <br>
+                <br>
+                <label>Last Name</label>
+                <input type="text" name="last_name" placeholder="last_name" id="last">
+                <br>
+                <br>
+                <label for="desc">Description:</label>
+                <br>
+                <br>
+                <textarea name="description" id="textarea" cols="30" rows="10" value></textarea>
+                <br>
+                <br>
+                <button type="submit" id="button">Add User</button>
+            </form>
+        </div>
+        <div id="cards">
+        </div>
+    </div>
+</body>
+</html>
