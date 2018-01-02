@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Functions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('#click').click(function(){
+            alert("you just clicked an alert activator")
+        });
+
+        $('#hide').click(function(){
+            $("#hide").hide()
+        });
+
+        $('#show').click(function(){
+            $('#hide').show()
+        });
+
+        $('#toggle').click(function(){
+            $('#hide').toggle()
+        });
+
+        $('#slidedown').click(function(){
+			$(".slidedown").slideDown()
+        });
+        
+        $('#slideup').click(function(){
+            $('.slideup').slideUp()
+        });
+
+        $('#slidetoggle').click(function(){
+            $('.slidetoggle').slideToggle()
+        });
+
+        $('#fadein').click(function(){
+            $('.fadein').fadeIn()
+        });
+
+        $('#fadeout').click(function(){
+            $('.fadeout').fadeOut()
+        });
+
+        $('#addclass').click(function(){
+            $('.addclass').addClass('green')
+        });
+
+        $('#before').click(function(){
+            $('.before').before("<h1>Hey Hey</h1>")
+        });
+
+        $('#after').click(function(){
+            $('.after').after("<h1>I'm Special</h1>")
+        });
+
+        $('#append').click(function(){
+            $('.append').append('<span>I am a span tag</span>')
+        });
+
+        $('#html').click(function(){
+            $('.html').html('<h1>YOOOOOOOO<h1>')
+        })
+
+        $('#val').click(function(){
+			var classVal = $("#attr").attr("class")
+			$('#attr').append(classVal)
+		})
+		$('#val2').click(function(){
+			$("#attr").attr("class", "red")
+        })
+        
+        $('.val').click(function(){
+			console.log($("#val2").val('input'))
+		})
+		$('.val2').click(function(){
+			$('#val').val("minh")
+        })
+        
+        $('.text').click(function(){
+            $('#text').text('hello')
+        })
+        
+        var ele = $('#data')
+        $.data(ele,'name', 'minh')
+        $('.data').click(function(){
+			var value = $.data(ele,"name")
+            $("#data").after(value)
+        })
+    });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Jquery Functions</h1>
+    </header>
+    <div class="main">
+        <div class="box">
+            <h1>.Click</h1>
+            <input type="button" value=".click" id="click">
+            <p>Click the button to activate the alert</p>
+        </div>
+        <div class="box">
+            <h1>.hide</h1>
+            <input type="button" value=".hide" id="hide">
+            <p>Click to hide this button.</p>
+        </div>
+        <div class="box">
+            <h1>.show</h1>
+            <input type="button" value=".show" id="show">
+            <p>Click to show the previous hidden button</p>
+        </div>
+        <div class="box">
+            <h1>.toggle</h1>
+            <input type="button" value=".toggle" id="toggle">
+            <p>Click to show/hide the 'Hide' button</p>
+        </div>
+        <div class="box">
+            <h1>.slideDown</h1>
+            <input type="button" value=".slideDown" id="slidedown">
+            <p>Element slides down</p>
+            <p class="slidedown">hiding</p>
+        </div>
+        <div class="box">
+            <h1>.slideUp</h1>
+            <input type="button" value=".slideUp" id="slideup">
+            <p>hides an element by sliding up</p>
+            <p class="slideup">I was hiding</p>
+        </div>
+        <div class="box">
+            <h1>.slideToggle</h1>
+            <input type="button" value=".slideToggle" id="slidetoggle">
+            <p>switches between slide up and slide down</p>
+            <p class="slidetoggle"> I am the toggled element</p>
+        </div>
+        <div class="box">
+            <h1>.fadeIn</h1>
+            <input type="button" value=".fadeIn" id="fadein">
+            <p>shows an element with a fade in animation</p>
+            <p class="fadein">I was hiding</p>
+        </div>
+        <div class="box">
+            <h1>.fadeOut</h1>
+            <input type="button" value=".fadeOut" id="fadeout">
+            <p>Hides an element with an animation</p>
+            <p class="fadeout">I will fade out</p>
+        </div>
+        <div class="box">
+            <h1>.addClass</h1>
+            <input type="button" value=".addClass" id="addclass">
+            <p>Adds a class to an element</p>
+            <p class="addclass">My text will turn green</p>
+        </div>
+        <div class="box">
+            <h1>.before</h1>
+            <input type="button" value=".before" id="before">
+            <p>Adds something before the element</p>
+            <p class="before">An h1 tag will be added before me</p>
+        </div>
+        <div class="box">
+            <h1>.after</h1>
+            <input type="button" value=".after" id="after">
+            <p>Adds something after the element</p>
+            <p class="after">An h1 tag will be added after me</p>
+        </div>
+        <div class="box">
+            <h1>.append</h1>
+            <input type="button" value=".append" id="append">
+            <p>appends something after the last element/text within an element</p>
+            <p class="append">I am the p tag</p>
+        </div>
+        <div class="box">
+            <h1>.html</h1>
+            <input type="button" value=".html" id="html">
+            <p>replaces the html within a element</p>
+            <div class="html">I am a div<p>I am a p tag within the div</p></div>
+        </div>
+        <div class="box">
+            <h1>.attr</h1>
+            <input type="button" value=".attr2" id="val2">
+            <input type="button" value=".attr" id="val">
+            <p>Retreives or set an attribute of an element</p>
+            <p class="green" id="attr">I am a p tag with the class of green. Class=</p>
+        </div>
+        <div class="box">
+            <h1>.val</h1>
+            <input type="text" name="name" id="val" value="yo!">
+            <p>Retreives or set a value of an input</p>
+            <input type="button" value=".val" class="val">
+            <input type="button" value=".val2" class="val2">
+        </div>
+        <div class="box">
+            <h1>.text</h1>
+            <input type="button" value="Click to replace the text with hello" class="text">
+            <p>replace the text of an element</p>
+            <p id="text">My text will be replaced</p>
+        </div>
+        <div class="box">
+            <h1>.data</h1>
+            <input type="button" value="Click to retreive the data" class="data">
+            <p>stores a data value in that element(hidden in javascript)</p>
+            <p id="data">I have a name hidden in me. What is it?</p>
+        </div>
+    </div>
+</body>
+</html>
