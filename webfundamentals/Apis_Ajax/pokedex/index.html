@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Pokedex</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function getPokemnon(idNum){
+            $.ajax({
+                method: 'GET',
+                url: 'https://pokeapi.co/api/v2/pokemon/'+idNum+'/',
+                success: function(res){
+                    var htmlString = "<h1>" + res.name +"</h1>";
+                    htmlString += "<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + idNum + ".png' alt=''>"
+                        + "<div id='subdetail'><h3>Types</h3><ul>";
+                        for(var i=0; i<res.types.length; i++){
+                            htmlString += "<li>" + res.types[i].type.name +"</li>";
+                        }
+                    htmlString += "</ul>";
+                    htmlString += "<h3>Height</h3><p>" +res.height +"</p>";
+                    htmlString += "<h3>Weight</h3><p>" +res.weight +"</p></div>";
+                    $('#details').html(htmlString);
+                    // console.log(res);
+                }
+            });
+        };
+        $(document).ready(function(){
+            
+            for(var i=1; i<1000; i++){
+                $('#pokedex').append("<img id='"+i+"' src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+i+".png' alt=''>");
+            }
+            getPokemnon(1);
+        });
+        $(document).on('click', 'img', function(){
+            var pkmnNum = $(this).attr('id');
+            getPokemnon(pkmnNum);
+        });
+    </script> 
+</head>
+<body>
+    <div id="pokedex">
+    </div>
+    <div id="details"></div>
+</body>
+</html>

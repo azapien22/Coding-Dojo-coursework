@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* outline: 1px dotted darkred; */
+}
+
+#pokedex{
+    width: 660px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(6, 6fr);
+    grid-template-rows: minmax(100px, max-content);
+    grid-gap: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+body{
+    text-align: center;
+}
+#details{
+    width: 350px;
+    height: 500px;
+    margin: 50px auto 0px 20px;
+    border: 10px solid darkred;
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: top;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#subdetail{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: flex-start;
+    height: 350px;
+    margin-left:50px;
+}
+ul{
+    margin-left:30px;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
