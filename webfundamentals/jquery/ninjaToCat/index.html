@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $('img').click(function(){
+				$(this).attr('temp', $(this).attr('data-alt-src'));
+				$(this).attr('data-alt-src', $(this).attr('src'));
+				$(this).attr('src', $(this).attr('temp'));
+			});
+        });
+    </script>
+</head>
+<body>
+    <div class="box">
+        <img src="css/pics/cat0.png" data-alt-src='css/pics/ninja0.png' temp=""><br>
+        <img src="css/pics/cat1.png" data-alt-src='css/pics/ninja1.png' temp=""><br>
+        <img src="css/pics/cat2.png" data-alt-src='css/pics/ninja2.png' temp=""><br>
+        <img src="css/pics/cat3.png" data-alt-src='css/pics/ninja3.png' temp=""><br>
+        <img src="css/pics/cat4.png" data-alt-src='css/pics/ninja4.png' temp="">
+    </div>
+</body>
+</html>
