@@ -5,7 +5,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/result', methods=["POST"])
+@app.route('/results', methods=["POST"])
 def result():
     name = request.form['name']
     location = request.form['location']

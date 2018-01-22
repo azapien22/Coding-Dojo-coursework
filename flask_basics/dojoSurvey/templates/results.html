@@ -7,17 +7,13 @@
     <title>Results Page</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-          <div class="col-xs-6 col-xs-offset-3">
-            <h1>Submitted Info</h1>
-            <h5>Name: <span class="pull-right">{{name}}</span></h5>
-            <h5>Location: <span class="pull-right">{{location}}</span></h5>
-            <h5>Language: <span class="pull-right">{{language}}</span></h5>
-            <h5>Comment: <span class="pull-right">{{comment}}</span></h5>
-            <a href="/"><button class="btn btn-info">Back</button></a>
-          </div>
-        </div>
-      </div>
+    <fieldset>
+      <legend>Dojo Survey</legend>
+      Name: <p>{{name}}</p>
+      Dojo Location:<p>{{location}}</p>
+      Favorite Language: <p>{{language}}</p>
+      Comment: <p>{{comment}}</p>
+      <a href="/"><button class="btn btn-info">Back</button></a>
+    </fieldset>
 </body>
 </html>
