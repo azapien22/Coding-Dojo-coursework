@@ -1,0 +1,75 @@
+* {
+    margin: 10px 10px;
+}
+
+h1 {
+    background-color: rgb(153, 152, 152);
+    padding: 30px 30px;
+    font-size: 60px;
+}
+
+#main {
+    background-color: rgb(153, 152, 152);
+    font-size: 50px;
+    padding: 30px 30px 100px 30px;
+}
+
+@media only screen and (max-width: 480px){
+    .phone {
+        background-color: yellow;
+        font-size: 24px;
+        padding: 20px 20px;
+        position: relative;
+        bottom: 2em;
+    }
+
+    .desktop,
+    .tablet {
+        visibility: hidden;
+    }
+
+    #main {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (min-width: 481px){
+    .tablet {
+        background-color: yellow;
+        font-size: 30px;
+        padding: 20px 20px;
+        position: relative;
+        bottom: 0.7em;
+    }
+
+    #main {
+        font-size: 2.25rem;
+    }
+
+    .phone,
+    .desktop  {
+        visibility: hidden;;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .desktop {
+        background-color: yellow;
+        font-size: 30px;
+        padding: 20px 20px;
+        visibility: visible;
+    }
+
+    #main {
+        font-size: 50px;
+    }
+
+    .tablet {
+        visibility: hidden;
+    }
+
+}
